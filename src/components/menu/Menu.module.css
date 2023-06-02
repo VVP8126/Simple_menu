@@ -1,0 +1,46 @@
+.menu {
+  position: fixed;
+  left: 0;
+  top: 100px;
+  width: 250px;
+  height: 100vh;
+  background-color: #151515;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-250px);
+  transition: all 0.8s ease-in-out;
+}
+.menuItem {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+.menu.opened {
+  transform: translateX(0);
+}
+.menuBtn {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  right: 0;
+  top: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.line {
+  display: block;
+  width: 100%;
+  height: 25%;
+  border-bottom: 1px solid #fff;
+}
+.close {
+  color: #fff;
+  font-size: xx-large;
+}
